@@ -1,6 +1,6 @@
 # Spark基础
 - [Spark概述](01spark/2-1-spark概述.md)
-- [Spark组件](https://www.baidu.com)
+- [Spark组件](01spark/2-spark运行模式.md)
 - [Spark运行模式](01spark/2-spark运行模式.md)
 
 # Spark Core
