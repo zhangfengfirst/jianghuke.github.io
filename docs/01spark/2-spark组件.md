@@ -25,3 +25,5 @@ Driver把executor的需求通知给Application Master，后者与资源管理器
 # Spark Context
 Spark Context是Spark功能的主要入口点，是Spark应用程序的核心。它允许Driver通过集群管理器访问集群，用来在集群上创建RDD、累加器和广播变量。
 当用户首次提交时，Spark驱动程序会为每个Spark应用程序创建Spark Context。它存在于Spark应用程序的整个生命周期中。
+
+# 
