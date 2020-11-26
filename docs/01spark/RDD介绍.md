@@ -8,10 +8,15 @@
 
 # spark-partition属性
 
-RDD在没有程序员敢于的情况下是自动分区的。但是，有时候可根据应用程序调整分区的大小、数量、方案。
-
 - size
 - number
 - partitioning scheme
 - node distribution
 - repartitioning
+
+RDD在没有程序员干预的情况下是自动分区的。但是，有时候可根据应用程序调整分区的大小、数量、方案。
+通常，较小/更多的分区（size小、number多）可以将工作分配给更多的worker，但是较大/更少的分区（size大、number小）可以使工作以更大的块完成，只要所有worker都保持忙碌。由于减少了开销，这可能使工作更快的完成。
+
+增加分区的数量将使每个分区的数据更少。
+
+分区的最大大小（size）受限于executor可用内存。
