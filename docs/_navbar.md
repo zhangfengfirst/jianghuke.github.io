@@ -1,6 +1,6 @@
 - 编程
  - python
- - scala
+ - [scala](02scala/README.md)
  - java
  - IDEA
  - Maven
