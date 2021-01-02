@@ -1,7 +1,7 @@
 - 编程
  - python
  - [scala](02scala/README.md)
- - java
+ - [java](04java/readme.md)
  - IDEA
  - Maven
 - 大数据
