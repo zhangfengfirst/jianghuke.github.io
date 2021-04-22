@@ -1,6 +1,8 @@
 # 术语及解释
 
 不分先后顺序。
+## 0.基本概念
+- 
 
 ## 1.接口 Interface
 ##### 定义
@@ -39,6 +41,116 @@ public class 类名 implements 接口名称[...,其他接口名称，...]{
 - 实际开发中接口的三个使用原则：指定操作的标准；表示一种能力；将服务器端的远程方法视图提供给客户端。
 
 ##### 举例
+
+## 2.泛化
+##### 定义
+>泛化（generalize）是将一些不必要的特殊值（比如常量）用更普遍化的值代替（比如变量或参数）的过程。泛化可以增加程序的可重用性，有时还可以使程序更易阅读。
+##### 特点
+##### 举例
+
+## 3.泛型
+##### 定义
+##### 特点
+- 泛型的本质是参数化类型，也就是说所操作的数据类型被指定为一个参数。
+- 泛型的本质是参数化类型，参数就是定义方法的时候定义形参（局部变量），调用方法（执行方法）的时候传递实参（引用，或变量值）。参数化类型就是将原来具体的类型参数化
+- 泛型是一种语法糖，在编译阶段完成类型转化，避免在运行时候强制类型转换出现的错误。
+- java中泛型是JDK1.5的新特性，在1.5及之后版本中支持
+- Java的泛型就是在定义的同时明确指明其类型，增强程序的可读性，同时类型的检查在编译阶段就可以完成，避免运行时的异常，从而使程序有更强的健壮性。例如：传统的定义容器对象：`Map m = new HashMap()`，使用泛型定义对象：`Map<Integer, News> = new HashMap<Integer, News>()`
+
+##### 举例
+
+## 4.泛型方法
+##### 定义
+##### 特点
+- 定义一个泛型方法，该方法在调用时可以接收不同类型的参数。根据传递给泛型方法的参数类型，编译器适当地处理每一个方法调用。
+
+##### 举例
+
+## 5.Java容器（集合）
+##### 定义
+##### 特点
+- java容器设计目标：该框架必须是高性能的，基本集合的实现也是高效的。该框架允许不同类型的集合。对一个集合的扩展和适应必须是简单的。
+- ArrayList:元素可重复且有序、修改和查找效率高、频繁访问列表元素和在列表末尾添加删除元素的场景用ArrayList
+- LinkedList:增加和删除效率高、频繁在列表任意位置进行增加删除元素用LinkList、通过循环迭代来访问列表中的元素用LinkList
+- HashSet:元素不重复且无序、
+- HashMap:键值对
+
+### 5.1.ArrayList
+##### 定义
+```
+import java.util.ArrayList; //引入 ArrayList 类
+ArrayList<E> a = new ArrayList<>(); //初始化
+ArrayList<String> sites = new ArrayList<String>();
+sites.add("baidu");
+sites.add("google");
+ArrayList<Integer> n = new Array<Integer>();
+n.add(1);
+```
+##### 特点
+- ArrayList类是一个可以动态修改的数组，与普通数组的区别就是它是没有固定大小的限制，可以添加或删除元素。
+- ArrayList继承了AbstractList，并实现了List接口
+- ArrayList类位于 `java.util` 包中
+- ArrayList是一个数组队列，提供了相关的添加、删除、修改、遍历等功能。常用方法有`增add()、删remove()、改set()、查get()、排序sort()、size()`
+- 可以用`for`和`for-each`迭代元素。
+- ArrayList中的元素都是引用数据类型的对象，如果要存储基本类型，需要用到基本类型的包装类。
+
+##### 举例
+
+### 5.2.LinkList
+##### 定义
+```
+import java.util.LinkedList
+LinkedList<String> sites = new LinkedList<String>();
+sites.add("baidu");
+sites.add("google");
+System.out.println(sites); //打印列表元素
+sites.addFirst("weibo"); //在表头添加元素
+sites.addLast("wangyi"); //在表尾添加元素
+sites.removeFirst();
+sites.removeLast();
+sites.getFirst();
+sites.getLast();
+```
+##### 特点
+- LinkedList继承了AbstractSequentialList类；实现了Queue接口，可作为队列使用；实现了List接口，可进行列表操作；实现了java.io.Serializable接口，可支持序列化，能通过序列化去传输。
+- 常用方法：
+
+##### 举例
+### 5.3.HashSet
+##### 定义
+##### 特点
+- HashSet基于HashMap来实现，是一个不允许有重复元素的集合，允许有null值，无序、不会记录插入的顺序，不是线程安全
+- 实现了Set接口
+
+##### 举例
+
+### 5.4.HashMap
+##### 定义
+##### 特点
+- HashMap是一个散列表，存储键值对。
+- 实现了Map接口，根据键的HashCode值存储数据，具有很快的访问速度，最多允许一条记录的键为null，不支持线程同步。
+- HashMap是无序的，不会记录插入的顺序
+- HashMap继承了AbstractMap，实现了Map、Cloneable、java.io.Serializable接口
+
+
+##### 举例
+
+## 6.泛型与容器
+##### 定义
+##### 特点
+- 在java编程中，常常用到在容器中存放对象或从容器中取出对象，并根据实际情况转型为相应的对象，但在转型过程中极易出现错误，且很难发现。而使用泛型则可以在存取对象时**明确指明对象的类型**，将问题暴露在编译阶段，由编译器检测，从而避免java在运行时出现转型异常，增加程序的可读性与稳定性，提高程序的运行效率。
+
+##### 举例
+
+## 7.异常
+##### 定义
+##### 特点
+- Java程序能够捕获异常，通常不会捕获错误。错误不在Java程序处理的范畴之内。
+- try代码块出现异常，try块中后续代码会被跳过。如果捕获了产生的异常对象，执行完catch代码块后，执行catch后的内容。程序正常结束。
+- 程序如果产生异常，自己能解决就解决。如果解决不了，谁调用就让谁去解决，如果调用者解决不了，最后交给JVM来解决。
+##### 举例
+### 7.1.抛出异常
+### 7.2.捕获异常
 
 # 一、Java基础
 ## 标识符
