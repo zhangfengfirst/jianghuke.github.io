@@ -21,17 +21,19 @@
 <br>
 
 编程
-- [java]
+- [java](00fiinal/20java.md)
 - [数据结构]
-- [算法]
-- [设计模式]
+- [算法](00fiinal/21算法.md)
+- [设计模式](00fiinal/22设计模式.md)
 - [python]
 - [scala]
+- [工具使用](00fiinal/23工具使用.md)
 
 <br>
 
 数据中台
 - hadoop
+- 商业与产品
 
 <br><br>
 
