@@ -12,6 +12,7 @@
 <br>
 
 一、计算机科学基础
+- [计算机系统](00fiinal/28计算机系统.md)
 - [操作系统](00fiinal/10操作系统.md)
 - [数据库](00fiinal/11数据库.md)
 - [计算机网络](00fiinal/12计算机网络.md)
@@ -30,7 +31,8 @@
 <br>
 
 三、中台
-- hadoop
+- [数据仓库](00fiinal/29数据仓库.md)
+- [hadoop](00fiinal/30hadoop.md)
 - 商业与产品
 - [hive](00fiinal/24hive.md)
 - [数字化解决方案](00fiinal/26数字化解决方案.md)
