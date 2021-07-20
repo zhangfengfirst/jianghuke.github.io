@@ -25,6 +25,7 @@
 #### 三、中台
 - [数据仓库](00fiinal/29数据仓库.md)
 - [hadoop](00fiinal/30hadoop.md)
+- [ClickHouse](00fiinal/31clickhouse.md)
 - 商业与产品
 - [hive](00fiinal/24hive.md)
 - [数字化解决方案](00fiinal/26数字化解决方案.md)
@@ -47,5 +48,3 @@
 - [用户评级]
 
 
-收藏
-https://blog.csdn.net/heimu24/article/details/81189700
