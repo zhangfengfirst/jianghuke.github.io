@@ -1,0 +1,25 @@
+- 编程
+  - python
+  - [scala](02scala/README.md)
+  - [java](04java/readme.md)
+  - IDEA
+  - Maven
+- 大数据
+  - [spark](01spark/1-spark.md)
+  - hadoop
+- 数据仓库
+- 数据挖掘
+  - [数据分析](03data_analytic/数据分析.md)
+  - 机器学习
+  - 深度学习
+  - 数据挖掘
+  - [行业领域](08行业领域/行业领域.md)
+- 数学知识
+  - 高等数学
+  - 概率统计
+  - 线性代数
+- 其他
+  - [英语](05其他/01英语/英语.md)
+  - [各行业概念](各行业概念.md)
+  - [last_again](last_again/readme.md)
+  - [final](00fiinal/readme.md)
