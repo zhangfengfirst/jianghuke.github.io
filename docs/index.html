@@ -26,27 +26,6 @@
       // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
       maxLevel: 4, 
 
-      plugins: [
-        /*来必力评论*/
-        function (hook, vm) {
-          // load livere
-          hook.beforeEach(function(content) {
-            var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n"
-            return content + comment;
-          });
-
-          hook.doneEach(function() {
-            (function(d, s) {
-              var j, e = d.getElementsByTagName(s)[0];
-              if (typeof LivereTower === 'function') { return; }
-              j = d.createElement(s);
-              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-              j.async = true;
-              e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-          });
-        },
-      ]
     }
   </script>
 
@@ -62,19 +41,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
 
-
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.goup({
-        trigger: 100,
-        bottomOffset: 32,
-        locationOffset: 32,
-        title: 'TOP',
-        titleAsText: true
-      });
-    });
-  </script>
 
 </body>
 </html>
